@@ -1,0 +1,26 @@
+version: "3.7"
+volumes:
+    data:
+        name: data
+
+services: 
+    db:
+        image: mvertes/alpine-mongo
+        volumes:
+            - .:/ws
+            - data:/data/db
+        ports:
+            - 27017:27017
+    backend:
+        image: node:12.16.1-alpine
+        volumes:
+            - .:/ws
+        environment: 
+           - vidly_jwtPrivateKey=mySecureKey
+           - NODE_ENV=test
+        ports:
+            - 3001:3001
+            - 5858:5858
+        working_dir: /ws/backend
+        entrypoint: sh -c 'npm install;tail -f'
+    
