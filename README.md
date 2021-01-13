@@ -1,5 +1,5 @@
-# Tasks manager
-An API to manage vinils
+# Vidly
+An API that provide features to manage a movie rental store
 
 ## Table of contents
 * [About](#about)
@@ -14,28 +14,39 @@ An API to manage vinils
 * [Contact](#contact)
 
 ## About
-The intention of doing this project was to understand how to develop the backend architecture using NestJS, Node and Typescript.
+The intention of doing this project was to understand how to develop the backend architecture using Node and Javascript.
 
 ## Features
 List of features ready and TODOs for future development
-* Signup
 * Signin
-* Signout
-* Create task
-* Update task
-* Delete task
-* Search tasks
+* Create user
+* Update user
+* Delete user
+* Search users
+* Create costumer
+* Update costumer
+* Delete costumer
+* Search costumers
+* Create genre
+* Update genre
+* Delete genre
+* List genres
+* Create movie
+* Update movie
+* Delete movie
+* List movies
+* Rental movies
+* List rental
+* Return rental
 
 To-do list:
 * Create the frontend web application
 
 ## Technologies
-* NestJS - https://nestjs.com/
 * Node - https://nodejs.org/en/
-* Typescript - https://www.typescriptlang.org/
+* Javascript - https://developer.mozilla.org/pt-BR/docs/Aprender/JavaScript
 * Jest - https://jestjs.io/
-* Swagger - https://swagger.io/
-* PostgresSQL - https://www.postgresql.org/
+* MongoDB - https://www.mongodb.com/
 * Docker - https://www.docker.com/
 * Docker Compose - https://docs.docker.com/compose/install/
 
@@ -46,7 +57,7 @@ You must install [docker](https://www.digitalocean.com/community/tutorials/como-
 
 #### Clone the repository
 ```sh
-git clone https://github.com/tiagovbarreto/tasks-nestjs.git
+git clone https://github.com/tiagovbarreto/vidly.git
 ```
 
 #### Start project
@@ -58,12 +69,6 @@ $ docker-compose up
 #### To run tests
 ```sh
 $ docker-compose exec backend yarn test
-```
-
-## Documentation
-#### To access swagger
-```sh
-http://localhost:3000/api
 ```
 
 ## Usefull commands
@@ -82,21 +87,13 @@ $ docker exec -it <container id> /bin/sh or $ docker-compose exec backend /bin/s
 $ docker exec -it <container id> /bin/sh or $ docker-compose exec db /bin/sh
 ```
 
-#### To access the database
-
-```sh
-$ su postgres
-$ psql
-$ \c taskmanagement
-```
-
 ## Status
 Project is: _finished_
 
 ## Inspiration
-The knowledge was acquired in Ariel Weinberger's NestJS Course. The objective of the course was to develop and deploy back-end enterprise applications following best practices using NestJS, Node.js and TypeScript.
+The knowledge was acquired in Mosh's Node Course. The objective of the course was to develop and deploy back-end enterprise applications following best practices using NestJS, Node.js and TypeScript.
 
-Thank you a lot Ariel!
+Thank you a lot Mosh!
 
 ## Contact
 Created by tiagovalentim@gmail.com - feel free to contact me!
