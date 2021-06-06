@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "start": "nodemon index.js",
-    "test": "jest --watchAll --verbose --coverage -i"
+    "test": "jest --watchAll --runInBand --verbose --coverage -i"
   },
   "jest": {
     "testEnvironment": "node"
@@ -14,28 +14,27 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "bcrypt": "^3.0.8",
     "bcryptjs": "^2.4.3",
     "compression": "^1.7.4",
-    "config": "^3.2.5",
+    "config": "^3.3.6",
     "express": "^4.17.1",
     "express-async-errors": "^3.1.1",
-    "fawn": "^2.1.5",
-    "helmet": "^3.21.2",
+    "helmet": "^3.23.3",
     "joi": "^14.3.1",
     "joi-objectid": "^2.0.0",
     "jsonwebtoken": "^8.5.1",
-    "moment": "^2.24.0",
-    "mongoose": "^5.9.0",
-    "winston": "^2.4.0",
-    "winston-mongodb": "^3.0.0"
+    "moment": "^2.29.1",
+    "mongoose": "^5.12.13",
+    "mongoose-transactions": "^1.1.4",
+    "winston": "^2.4.5",
+    "winston-mongodb": "^3.0.2"
   },
   "devDependencies": {
-    "@types/express": "^4.17.2",
-    "@types/jest": "^25.1.2",
+    "@types/express": "^4.17.12",
+    "@types/jest": "^25.2.3",
     "@types/joi": "^14.3.4",
-    "jest": "^25.1.0",
-    "nodemon": "^2.0.2",
+    "jest": "^25.5.4",
+    "nodemon": "^2.0.7",
     "supertest": "^4.0.2"
   }
 }
