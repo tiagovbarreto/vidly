@@ -18,8 +18,8 @@ services:
     environment:
       - vidly_jwtPrivateKey=mySecureKey
     ports:
-      - 3000:3000
-      - 3001:3001
+      - 3000:3000 #dev
+      - 3001:3001 #test
       - 5858:5858
     working_dir: /ws/backend
     entrypoint: sh -c 'npm install; npm start'
