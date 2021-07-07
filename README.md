@@ -10,7 +10,6 @@ An API that provide features to manage a movie rental store
 * [Documentation](#documentation)
 * [Usefull commands](#usefull-commands)
 * [Status](#status)
-* [Inspiration](#inspiration)
 * [Contact](#contact)
 
 ## About
@@ -89,11 +88,6 @@ $ docker exec -it <container id> /bin/sh or $ docker-compose exec db /bin/sh
 
 ## Status
 Project is: _finished_
-
-## Inspiration
-The knowledge was acquired in Mosh's Node Course. The objective of the course was to develop and deploy back-end enterprise applications following best practices using NestJS, Node.js and TypeScript.
-
-Thank you a lot Mosh!
 
 ## Contact
 Created by tiagovalentim@gmail.com - feel free to contact me!
